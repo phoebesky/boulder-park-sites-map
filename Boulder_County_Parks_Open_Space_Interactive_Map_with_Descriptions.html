@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8445188c303239aa39d31019812d2539 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8445188c303239aa39d31019812d2539" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8445188c303239aa39d31019812d2539 = L.map(
+                "map_8445188c303239aa39d31019812d2539",
+                {
+                    center: [40.05, -105.25],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_26d8b99c4216fcce6a281b58128e37dc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_26d8b99c4216fcce6a281b58128e37dc.addTo(map_8445188c303239aa39d31019812d2539);
+        
+    
+            var marker_1985233b5ca39a6075b074d8d1671e76 = L.marker(
+                [40.03, -105.34],
+                {
+}
+            ).addTo(map_8445188c303239aa39d31019812d2539);
+        
+    
+            var icon_668ce974e66d3e67d919f0ac9526b734 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6348fdbcf7e05adfc7d77d0cb88028f9 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_aacbe41d2515b41b458c26f840754c84 = $(`<div id="html_aacbe41d2515b41b458c26f840754c84" style="width: 100.0%; height: 100.0%;">     <div style='max-width: 340px;'>       <h4 style='margin:0 0 6px 0;'>Betasso Preserve</h4>       <div style='font-size: 12.5px; line-height: 1.35;'>Mountain landscape shaped by Indigenous presence, early settlement, timber use, and evolving recreational access.</div>     </div>     </div>`)[0];
+                popup_6348fdbcf7e05adfc7d77d0cb88028f9.setContent(html_aacbe41d2515b41b458c26f840754c84);
+            
+        
+
+        marker_1985233b5ca39a6075b074d8d1671e76.bindPopup(popup_6348fdbcf7e05adfc7d77d0cb88028f9)
+        ;
+
+        
+    
+    
+            marker_1985233b5ca39a6075b074d8d1671e76.bindTooltip(
+                `<div>
+                     <b>Betasso Preserve</b><br/>Mountain landscape shaped by Indigenous presence, early settlement, timber use, and evolving recreational access.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1985233b5ca39a6075b074d8d1671e76.setIcon(icon_668ce974e66d3e67d919f0ac9526b734);
+            
+    
+            var marker_a9d1f50b6a4e2a47db1aed583f0d982a = L.marker(
+                [40.0, -105.35],
+                {
+}
+            ).addTo(map_8445188c303239aa39d31019812d2539);
+        
+    
+            var icon_3b582e36bf33de4e7d82ecad2bdbd4fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3218b71dd7ccbd0a42370296cdfbd8ca = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_feec56c0f873a89ef36b5614ebbfb59f = $(`<div id="html_feec56c0f873a89ef36b5614ebbfb59f" style="width: 100.0%; height: 100.0%;">     <div style='max-width: 340px;'>       <h4 style='margin:0 0 6px 0;'>Walker Ranch</h4>       <div style='font-size: 12.5px; line-height: 1.35;'>A site reflecting layered histories of homesteading, water use, mining, and outdoor recreation in Boulder Canyon.</div>     </div>     </div>`)[0];
+                popup_3218b71dd7ccbd0a42370296cdfbd8ca.setContent(html_feec56c0f873a89ef36b5614ebbfb59f);
+            
+        
+
+        marker_a9d1f50b6a4e2a47db1aed583f0d982a.bindPopup(popup_3218b71dd7ccbd0a42370296cdfbd8ca)
+        ;
+
+        
+    
+    
+            marker_a9d1f50b6a4e2a47db1aed583f0d982a.bindTooltip(
+                `<div>
+                     <b>Walker Ranch</b><br/>A site reflecting layered histories of homesteading, water use, mining, and outdoor recreation in Boulder Canyon.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a9d1f50b6a4e2a47db1aed583f0d982a.setIcon(icon_3b582e36bf33de4e7d82ecad2bdbd4fb);
+            
+    
+            var marker_9138e01d9d699223c39cf1b237437baa = L.marker(
+                [40.16, -105.26],
+                {
+}
+            ).addTo(map_8445188c303239aa39d31019812d2539);
+        
+    
+            var icon_a6d127bc0576d4bf6e4c7f77e2f851de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e4dca94ad8972c97dbdb4ba7aaa65da = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_6dd8441189b3f39dd01b6fea5f9660be = $(`<div id="html_6dd8441189b3f39dd01b6fea5f9660be" style="width: 100.0%; height: 100.0%;">     <div style='max-width: 340px;'>       <h4 style='margin:0 0 6px 0;'>Heil Valley Ranch</h4>       <div style='font-size: 12.5px; line-height: 1.35;'>Ranching and agricultural history set within a foothills landscape later adapted for public open space and recreation.</div>     </div>     </div>`)[0];
+                popup_7e4dca94ad8972c97dbdb4ba7aaa65da.setContent(html_6dd8441189b3f39dd01b6fea5f9660be);
+            
+        
+
+        marker_9138e01d9d699223c39cf1b237437baa.bindPopup(popup_7e4dca94ad8972c97dbdb4ba7aaa65da)
+        ;
+
+        
+    
+    
+            marker_9138e01d9d699223c39cf1b237437baa.bindTooltip(
+                `<div>
+                     <b>Heil Valley Ranch</b><br/>Ranching and agricultural history set within a foothills landscape later adapted for public open space and recreation.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9138e01d9d699223c39cf1b237437baa.setIcon(icon_a6d127bc0576d4bf6e4c7f77e2f851de);
+            
+    
+            var marker_c3641c205024cbb54266a4fd456167e4 = L.marker(
+                [40.04, -105.5],
+                {
+}
+            ).addTo(map_8445188c303239aa39d31019812d2539);
+        
+    
+            var icon_dd106318430a370d25a7ace8219cf7be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67eac30bedc4bbb8e1208033f27a2c0b = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_5b7c08607fda2cdf4dc1995fa1eeb38f = $(`<div id="html_5b7c08607fda2cdf4dc1995fa1eeb38f" style="width: 100.0%; height: 100.0%;">     <div style='max-width: 340px;'>       <h4 style='margin:0 0 6px 0;'>Caribou Ranch Open Space (DeLonde Homestead)</h4>       <div style='font-size: 12.5px; line-height: 1.35;'>High-country mining, ranching, and homesteading history, including the DeLonde Homestead, within a rich flora and fauna landscape. The barn was converted into a music recording studio in the 70s and attracted artists such as U2, Billy Joel, Chicago, Elton John, Rod Stewart, and many others. The studio closed after a March 1985 fire destroyed the control room.</div>     </div>     </div>`)[0];
+                popup_67eac30bedc4bbb8e1208033f27a2c0b.setContent(html_5b7c08607fda2cdf4dc1995fa1eeb38f);
+            
+        
+
+        marker_c3641c205024cbb54266a4fd456167e4.bindPopup(popup_67eac30bedc4bbb8e1208033f27a2c0b)
+        ;
+
+        
+    
+    
+            marker_c3641c205024cbb54266a4fd456167e4.bindTooltip(
+                `<div>
+                     <b>Caribou Ranch Open Space (DeLonde Homestead)</b><br/>High-country mining, ranching, and homesteading history, including the DeLonde Homestead, within a rich flora and fauna landscape. The barn was converted into a music recording studio in the 70s and attracted artists such as U2, Billy Joel, Chicago, Elton John, Rod Stewart, and many others. The studio closed after a March 1985 fire destroyed the control room.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c3641c205024cbb54266a4fd456167e4.setIcon(icon_dd106318430a370d25a7ace8219cf7be);
+            
+    
+            var marker_0f28b6d1616832494aeef4d181bb1df4 = L.marker(
+                [40.18, -105.15],
+                {
+}
+            ).addTo(map_8445188c303239aa39d31019812d2539);
+        
+    
+            var icon_eae667584496a0a0393316ee648fc564 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4989d5626672310f2d8fd9b9827d3cc9 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_60f8aedcb61204bae50874a833c005c9 = $(`<div id="html_60f8aedcb61204bae50874a833c005c9" style="width: 100.0%; height: 100.0%;">     <div style='max-width: 340px;'>       <h4 style='margin:0 0 6px 0;'>Ramey and Braley Properties (St. Vrain Corridor)</h4>       <div style='font-size: 12.5px; line-height: 1.35;'>Agricultural and working-land histories tied to irrigation, river systems, and rural life along the St. Vrain.</div>     </div>     </div>`)[0];
+                popup_4989d5626672310f2d8fd9b9827d3cc9.setContent(html_60f8aedcb61204bae50874a833c005c9);
+            
+        
+
+        marker_0f28b6d1616832494aeef4d181bb1df4.bindPopup(popup_4989d5626672310f2d8fd9b9827d3cc9)
+        ;
+
+        
+    
+    
+            marker_0f28b6d1616832494aeef4d181bb1df4.bindTooltip(
+                `<div>
+                     <b>Ramey and Braley Properties (St. Vrain Corridor)</b><br/>Agricultural and working-land histories tied to irrigation, river systems, and rural life along the St. Vrain.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0f28b6d1616832494aeef4d181bb1df4.setIcon(icon_eae667584496a0a0393316ee648fc564);
+            
+    
+            var marker_c57a30c95a053989ffabe6225aae08b9 = L.marker(
+                [40.22, -105.26],
+                {
+}
+            ).addTo(map_8445188c303239aa39d31019812d2539);
+        
+    
+            var icon_9323db88d23ec23080fe0a0cc4f8e838 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8a9ffd4981d9bc8dc765280386e0e5d = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_118216bb639d3a7405ddd3783d3fdce3 = $(`<div id="html_118216bb639d3a7405ddd3783d3fdce3" style="width: 100.0%; height: 100.0%;">     <div style='max-width: 340px;'>       <h4 style='margin:0 0 6px 0;'>Rabbit Mountain</h4>       <div style='font-size: 12.5px; line-height: 1.35;'>A landscape with strong Native American and archaeological significance, emphasizing deep time and Indigenous land use rather than standing structures.</div>     </div>     </div>`)[0];
+                popup_d8a9ffd4981d9bc8dc765280386e0e5d.setContent(html_118216bb639d3a7405ddd3783d3fdce3);
+            
+        
+
+        marker_c57a30c95a053989ffabe6225aae08b9.bindPopup(popup_d8a9ffd4981d9bc8dc765280386e0e5d)
+        ;
+
+        
+    
+    
+            marker_c57a30c95a053989ffabe6225aae08b9.bindTooltip(
+                `<div>
+                     <b>Rabbit Mountain</b><br/>A landscape with strong Native American and archaeological significance, emphasizing deep time and Indigenous land use rather than standing structures.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c57a30c95a053989ffabe6225aae08b9.setIcon(icon_9323db88d23ec23080fe0a0cc4f8e838);
+            
+    
+            var marker_f8eaad91a96c49d1a4907c7b610ae223 = L.marker(
+                [40.22, -105.1],
+                {
+}
+            ).addTo(map_8445188c303239aa39d31019812d2539);
+        
+    
+            var icon_295a62f55d5f88444ca59dd0d81b6262 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e514b5495b4712f10e115971f0c73a6 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_240c3fee2c6016f6cf9a1da092c1da91 = $(`<div id="html_240c3fee2c6016f6cf9a1da092c1da91" style="width: 100.0%; height: 100.0%;">     <div style='max-width: 340px;'>       <h4 style='margin:0 0 6px 0;'>Lagerman Agricultural Preserve (Rigsby / Turky Farms)</h4>       <div style='font-size: 12.5px; line-height: 1.35;'>Agricultural continuity and change, highlighting sugar beet farming, irrigation, and family farm histories.</div>     </div>     </div>`)[0];
+                popup_1e514b5495b4712f10e115971f0c73a6.setContent(html_240c3fee2c6016f6cf9a1da092c1da91);
+            
+        
+
+        marker_f8eaad91a96c49d1a4907c7b610ae223.bindPopup(popup_1e514b5495b4712f10e115971f0c73a6)
+        ;
+
+        
+    
+    
+            marker_f8eaad91a96c49d1a4907c7b610ae223.bindTooltip(
+                `<div>
+                     <b>Lagerman Agricultural Preserve (Rigsby / Turky Farms)</b><br/>Agricultural continuity and change, highlighting sugar beet farming, irrigation, and family farm histories.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f8eaad91a96c49d1a4907c7b610ae223.setIcon(icon_295a62f55d5f88444ca59dd0d81b6262);
+            
+    
+            var marker_0b2d58a57ef1f1451954caf3254f9980 = L.marker(
+                [40.19, -105.11],
+                {
+}
+            ).addTo(map_8445188c303239aa39d31019812d2539);
+        
+    
+            var icon_7922c0fcb21f2c281218e48905d85923 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d4558543f040353330ab360e8fc0d4e = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_8e659b068c999117752e6b0ead942fca = $(`<div id="html_8e659b068c999117752e6b0ead942fca" style="width: 100.0%; height: 100.0%;">     <div style='max-width: 340px;'>       <h4 style='margin:0 0 6px 0;'>Pella Crossing</h4>       <div style='font-size: 12.5px; line-height: 1.35;'>Community history centered on the Hygiene church and cemetery, reflecting rural religious life, settlement, and memory.</div>     </div>     </div>`)[0];
+                popup_8d4558543f040353330ab360e8fc0d4e.setContent(html_8e659b068c999117752e6b0ead942fca);
+            
+        
+
+        marker_0b2d58a57ef1f1451954caf3254f9980.bindPopup(popup_8d4558543f040353330ab360e8fc0d4e)
+        ;
+
+        
+    
+    
+            marker_0b2d58a57ef1f1451954caf3254f9980.bindTooltip(
+                `<div>
+                     <b>Pella Crossing</b><br/>Community history centered on the Hygiene church and cemetery, reflecting rural religious life, settlement, and memory.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0b2d58a57ef1f1451954caf3254f9980.setIcon(icon_7922c0fcb21f2c281218e48905d85923);
+            
+    
+            var marker_7d607a0c038615891d6e882e11b7487b = L.marker(
+                [40.07, -105.37],
+                {
+}
+            ).addTo(map_8445188c303239aa39d31019812d2539);
+        
+    
+            var icon_01f171a30b78ff2704cf7eaaef3eb15e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24a646619e67744f73706bc0ee22a47b = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_9cbf5287f2d960a6da5f1b66dd38ff14 = $(`<div id="html_9cbf5287f2d960a6da5f1b66dd38ff14" style="width: 100.0%; height: 100.0%;">     <div style='max-width: 340px;'>       <h4 style='margin:0 0 6px 0;'>Assay Office</h4>       <div style='font-size: 12.5px; line-height: 1.35;'>A rare surviving structure connected to Boulder County’s mining economy and early governmental infrastructure. An assay office is a facility where ore from nearby mines was officially tested to determine its mineral content and value—information that shaped mining claims, taxation, investment, and the regulation of extractive activity during the late nineteenth and early twentieth centuries. NOTE: this site is closed to the public and you have to work with Elisabeth to gain access.</div>     </div>     </div>`)[0];
+                popup_24a646619e67744f73706bc0ee22a47b.setContent(html_9cbf5287f2d960a6da5f1b66dd38ff14);
+            
+        
+
+        marker_7d607a0c038615891d6e882e11b7487b.bindPopup(popup_24a646619e67744f73706bc0ee22a47b)
+        ;
+
+        
+    
+    
+            marker_7d607a0c038615891d6e882e11b7487b.bindTooltip(
+                `<div>
+                     <b>Assay Office</b><br/>A rare surviving structure connected to Boulder County’s mining economy and early governmental infrastructure. An assay office is a facility where ore from nearby mines was officially tested to determine its mineral content and value—information that shaped mining claims, taxation, investment, and the regulation of extractive activity during the late nineteenth and early twentieth centuries. NOTE: this site is closed to the public and you have to work with Elisabeth to gain access.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d607a0c038615891d6e882e11b7487b.setIcon(icon_01f171a30b78ff2704cf7eaaef3eb15e);
+            
+    
+            var marker_61ae3d81e81bd5fcb1e314930515bda6 = L.marker(
+                [39.94, -105.38],
+                {
+}
+            ).addTo(map_8445188c303239aa39d31019812d2539);
+        
+    
+            var icon_f0f7b97879fcd4ef9f2a3e1655601ea7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17788c27a1261f42babf07d79942663a = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_ef10ee193735b96898d2f870d6872426 = $(`<div id="html_ef10ee193735b96898d2f870d6872426" style="width: 100.0%; height: 100.0%;">     <div style='max-width: 340px;'>       <h4 style='margin:0 0 6px 0;'>Cardinal Mill</h4>       <div style='font-size: 12.5px; line-height: 1.35;'>A historically complex industrial landscape shaped by milling, water power, transportation networks, labor, and environmental modification, revealing how extractive economies transformed foothill ecologies and communities over time. NOTE: this site is closed to the public and you have to work with Elisabeth to gain access.</div>     </div>     </div>`)[0];
+                popup_17788c27a1261f42babf07d79942663a.setContent(html_ef10ee193735b96898d2f870d6872426);
+            
+        
+
+        marker_61ae3d81e81bd5fcb1e314930515bda6.bindPopup(popup_17788c27a1261f42babf07d79942663a)
+        ;
+
+        
+    
+    
+            marker_61ae3d81e81bd5fcb1e314930515bda6.bindTooltip(
+                `<div>
+                     <b>Cardinal Mill</b><br/>A historically complex industrial landscape shaped by milling, water power, transportation networks, labor, and environmental modification, revealing how extractive economies transformed foothill ecologies and communities over time. NOTE: this site is closed to the public and you have to work with Elisabeth to gain access.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_61ae3d81e81bd5fcb1e314930515bda6.setIcon(icon_f0f7b97879fcd4ef9f2a3e1655601ea7);
+            
+    
+            var marker_f82522f3e4d53ee8dd1cb1ed15287195 = L.marker(
+                [39.96, -105.2],
+                {
+}
+            ).addTo(map_8445188c303239aa39d31019812d2539);
+        
+    
+            var icon_4faf9e609907ecfc5bc5dd81ea770874 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9db9d5beab5eb3ba3c4aff767900076 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_abc56be62f1e119e8f9669e1eaef0893 = $(`<div id="html_abc56be62f1e119e8f9669e1eaef0893" style="width: 100.0%; height: 100.0%;">     <div style='max-width: 340px;'>       <h4 style='margin:0 0 6px 0;'>Haystack Mountain</h4>       <div style='font-size: 12.5px; line-height: 1.35;'>A site of long-standing Native American significance and later use as a gathering and recreation space, including for Latinx families.</div>     </div>     </div>`)[0];
+                popup_f9db9d5beab5eb3ba3c4aff767900076.setContent(html_abc56be62f1e119e8f9669e1eaef0893);
+            
+        
+
+        marker_f82522f3e4d53ee8dd1cb1ed15287195.bindPopup(popup_f9db9d5beab5eb3ba3c4aff767900076)
+        ;
+
+        
+    
+    
+            marker_f82522f3e4d53ee8dd1cb1ed15287195.bindTooltip(
+                `<div>
+                     <b>Haystack Mountain</b><br/>A site of long-standing Native American significance and later use as a gathering and recreation space, including for Latinx families.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f82522f3e4d53ee8dd1cb1ed15287195.setIcon(icon_4faf9e609907ecfc5bc5dd81ea770874);
+            
+    
+            var marker_2c2f08a7c8529b7443ca73c036806582 = L.marker(
+                [40.12, -105.17],
+                {
+}
+            ).addTo(map_8445188c303239aa39d31019812d2539);
+        
+    
+            var icon_bdaae3d1b35785a105a73ff6a66ddc92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0108a4d32fb44edb31964e8d68ed43a4 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_97833f675eb33b9f19351d63c39529dd = $(`<div id="html_97833f675eb33b9f19351d63c39529dd" style="width: 100.0%; height: 100.0%;">     <div style='max-width: 340px;'>       <h4 style='margin:0 0 6px 0;'>Harney–Lastoka Site</h4>       <div style='font-size: 12.5px; line-height: 1.35;'>A historically dense agricultural and residential landscape with extensive built features, ownership records, and material evidence that supports a deep, multi-layered rural history.</div>     </div>     </div>`)[0];
+                popup_0108a4d32fb44edb31964e8d68ed43a4.setContent(html_97833f675eb33b9f19351d63c39529dd);
+            
+        
+
+        marker_2c2f08a7c8529b7443ca73c036806582.bindPopup(popup_0108a4d32fb44edb31964e8d68ed43a4)
+        ;
+
+        
+    
+    
+            marker_2c2f08a7c8529b7443ca73c036806582.bindTooltip(
+                `<div>
+                     <b>Harney–Lastoka Site</b><br/>A historically dense agricultural and residential landscape with extensive built features, ownership records, and material evidence that supports a deep, multi-layered rural history.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c2f08a7c8529b7443ca73c036806582.setIcon(icon_bdaae3d1b35785a105a73ff6a66ddc92);
+            
+</script>
+</html>
